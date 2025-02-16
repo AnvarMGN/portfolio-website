@@ -41,7 +41,7 @@ cd portfolio-website
 ```
 3. Установить необходимые зависимости node_modules
 ```
-nmp i
+npm i
 ```
 4. Запустить команду
 ```
