@@ -1,0 +1,33 @@
+@use "../../style/base.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("../../lib/fontawesome/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.center {
+    padding-left: calc(50% - 370px);
+    padding-right: calc(50% - 570px);
+}
+
+.container {
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    background-color: base.$lightGrayBackground;
+    
+    // .dark-mode{
+        
+    // }
+}

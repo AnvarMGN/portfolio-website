@@ -1,0 +1,631 @@
+@use "../../style/base.module.scss";
+
+
+@-webkit-keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-top {
+    0% {
+        -webkit-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-top {
+    -webkit-animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-bottom {
+    0% {
+        -webkit-transform: translateY(1000px);
+        transform: translateY(1000px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bottom {
+    -webkit-animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+.main-container {
+
+    .main-about {
+        padding: 50px 60px 70px 60px;
+
+        margin-bottom: 130px;
+
+        background-color: base.$white;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .main-about-block {
+            position: relative;
+            text-align: justify;
+            color: base.$black;
+
+            .main-about-title {
+                // width: 500px;
+                font-family: Inter;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 123.6%;
+            }
+
+            .main-about-paragraph {
+                // width: 424px;
+                margin-top: 18px;
+                color: base.$paragraphFont;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+
+                margin-bottom: 50px;
+            }
+
+            .main-about-btn {
+                border-radius: 5px;
+                padding: 16px 32px;
+                background-color: base.$yellow;
+
+                color: base.$black;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 19px;
+
+                .fa-arrow-right {
+                    margin-left: 12px;
+                }
+
+                &:hover {
+                    transition: color 0.5s;
+                    color: base.$white;
+                }
+            }
+
+            .ellipse1 {
+                position: absolute;
+                left: -30px;
+                top: -10px;
+            }
+
+            .ellipse3 {
+                position: absolute;
+                left: 90px;
+                top: 590px;
+            }
+
+            .ellipse4 {
+                position: absolute;
+                left: 480px;
+                top: 50px;
+            }
+
+            .rectangle1 {
+                position: absolute;
+                left: 250px;
+                top: 480px;
+            }
+        }
+
+        .main-img-box {
+            position: relative;
+
+            .rectangle2 {
+                position: absolute;
+                left: 300px;
+                top: 80px;
+            }
+
+            .triangle1 {
+                position: absolute;
+                left: 320px;
+                top: 500px;
+            }
+
+            .ellipse2 {
+                position: absolute;
+                left: -50px;
+                top: 380px;
+            }
+        }
+    }
+
+    .main-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .main-services-title {
+            color: base.$black;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 123.6%;
+
+            margin-bottom: 25px;
+        }
+
+        .main-services-text {
+            width: 50%;
+            color: base.$paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .main-services-card {
+            position: relative;
+            box-sizing: border-box;
+            background-color: base.$white;
+
+            width: 310px;
+            height: 225px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .services-card-svg {
+                margin-top: 35px;
+                margin-bottom: 35px;
+            }
+
+            .fa-code {
+                position: absolute;
+                top: 48px;
+                left: 145px;
+
+                color: base.$yellow;
+            }
+
+            .services-card-title {
+                color: base.$black;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 123.6%;
+
+                margin-bottom: 15px;
+            }
+
+            .services-card-text {
+                color: base.$paragraphFont;
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+
+                margin-bottom: 42px;
+            }
+        }
+
+    }
+
+    .main-education {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+
+        .main-education-title {
+            color: base.$black;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 123.6%;
+
+            margin-bottom: 25px;
+        }
+
+        .main-education-text {
+            width: 50%;
+            color: base.$paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .main-education-box {
+            padding-top: 50px;
+            padding-left: 36px;
+            padding-bottom: 30px;
+            padding-right: 50px;
+            background-color: base.$white;
+
+
+            .main-education-block {
+                display: flex;
+                flex-direction: row;
+
+                border-bottom: 1.5px solid base.$lightGrayBackground;
+                padding-bottom: 12px;
+
+                .education-block-date {
+                    display: flex;
+                    flex-direction: column;
+
+                    .education-block-date-title {
+                        margin-bottom: 28px;
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 123.6%;
+                    }
+
+                    .education-block-date-text {
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .education-block-date-text-span {
+                        margin-left: 10px;
+                        padding: 4px 8px 4px 8px;
+
+                        background-color: base.$yellow;
+                    }
+                }
+
+                .education-block-certificate {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 180px;
+
+                    .education-block-certificate-title {
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 123.6%;
+
+                        margin-bottom: 28px;
+                    }
+
+                    .education-block-certificate-text {
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 70px;
+
+        &-title {
+            color: base.$black;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 123.6%;
+
+            margin-bottom: 25px;
+        }
+
+        &-text {
+            width: 50%;
+            color: base.$paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        &-card {
+
+            display: flex;
+            flex-direction: column;
+            background-color: base.$white;
+
+            .main-portfolio-link {
+                text-decoration: none;
+
+                .main-portofolio-video {
+                    width: 940px;
+                }
+            }
+
+            .portfolio-img {
+                vertical-align: middle;
+                width: 310px;
+                height: 300px;
+            }
+
+            .portfolio-desc {
+                padding: 20px 40px;
+
+                .portfolio-card-title {
+                    color: base.$black;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 123.6%;
+
+                    margin-bottom: 15px;
+                }
+
+                .portfolio-card-text {
+                    color: base.$black;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                    margin-bottom: 42px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        margin-bottom: 70px;
+
+        .contact-leaveform {
+            // margin-right: 30px;
+
+            .contact-leaveform-title {
+                color: base.$black;
+                font-family: Inter;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 123.6%;
+
+                margin-bottom: 50px;
+            }
+
+            .contact-leaveform-box {
+                padding: 25px;
+                background-color: base.$white;
+
+                .contact-leaveform-block {
+                    display: flex;
+                    flex-direction: column;
+
+                    color: base.$paragraphFont;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 123.6%;
+
+                    .contact-leaveform-input {
+                        width: 500px;
+                        height: 50px;
+
+                        margin-top: 8px;
+                        margin-bottom: 25px;
+                        padding-left: 10px;
+
+                        background-color: base.$lightGrayBackground;
+
+                        border: none;
+
+                        font-size: 18px;
+                        color: base.$black;
+
+                        &-mess {
+                            height: 195px;
+
+                            margin-top: 8px;
+                            margin-bottom: 25px;
+                            padding-top: 15px;
+                            padding-left: 10px;
+
+                            background-color: base.$lightGrayBackground;
+
+                            border: none;
+
+                            font-size: 18px;
+                            color: base.$black;
+
+
+                        }
+                    }
+                }
+
+                .contact-leaveform-btn {
+                    border: none;
+                    outline: none;
+
+                    width: 160px;
+                    height: 35px;
+
+                    background-color: base.$yellow;
+
+                    color: base.$black;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+
+                    &:hover {
+                        transition: color 0.5s;
+                        color: base.$white;
+                    }
+                }
+            }
+
+        }
+
+        .contact-information {
+            width: 37%;
+            // height: 100%;
+            // display: flex;
+            // flex-direction: column;
+
+
+            .contact-information-title {
+                color: base.$black;
+                font-family: Inter;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 123.6%;
+
+                margin-bottom: 50px;
+            }
+
+            .contact-information-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                padding: 25px;
+                margin-top: 35px;
+
+                background-color: base.$white;
+
+                &:hover {
+                    .contact-information-block {
+                        transition: transform 0.5s;
+                        transform: scale(130%);
+                    }
+                }
+
+                .contact-information-block {
+                    position: relative;
+
+                    .fa-regular {
+                        position: absolute;
+                        top: 13px;
+                        left: 12px;
+                    }
+
+                    .fa-solid {
+                        position: absolute;
+                        top: 13px;
+                        left: 14px;
+                    }
+
+                    // .contact-information-svg{
+
+                    // }
+                }
+
+                .contact-information-grid {
+                    width: 100%;
+                    margin-top: 30px;
+
+                    display: flex;
+                    flex-direction: column;
+                    gap: 14px;
+
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr;
+                    // grid-template-rows: repeat(3, 1fr);
+                    // align-items: center;
+                    // gap: 14px;
+
+                    .contact-information-grid-li {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: baseline;
+
+                        .contact-information-grid-title {
+                            color: base.$paragraphFont;
+                            font-family: Inter;
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 123.6%;
+                        }
+
+                        .contact-information-grid-text {
+                            color: base.$paragraphFont;
+                            font-family: Inter;
+                            font-size: 15px;
+                            font-weight: 400;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 18px;
+        padding-bottom: 18px;
+
+        font-family: Inter;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        color: base.$black;
+        background-color: base.$white;
+
+        text-align: center;
+    }
+}
